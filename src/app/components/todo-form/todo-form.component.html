@@ -1,0 +1,18 @@
+<div class="card shadow text-center mb-5">
+  <div class="card-header bg-primary text-light">
+      <h4>List Belum Tercapai</h4>
+  </div>
+
+  <div class="card-body">
+      <form #addTodo="ngForm" (submit)="onSubmit()">
+          <div class="form-group">
+            <br>
+              <input type="text" name="todo" class="form-control" placeholder="Masukin List" [(ngModel)]="todo" required>
+          </div>
+          <br>
+          <br>
+          <button class="btn btn-primary" [disabled]="addTodo.invalid"> Masukin List </button>
+      </form>
+      <!-- {{todo}} -->
+  </div>
+</div>
